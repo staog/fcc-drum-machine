@@ -16,19 +16,19 @@ const sounds = [
    keyCode:87
   },
   {
-   soundId:'Church-Organ',
+   soundId:'Organ',
    key:'E',
    src:'https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674666/sample-swap/piano/almost-the-doors-organ.mp3',
    keyCode:69
   },
   {
-   soundId:'Saxophone',
+   soundId:'Sax',
    key:'A',
    src:'https://res.cloudinary.com/dzsmdyknz/video/upload/v1532675116/sample-swap/sax/sax-squeal-tore-my-brains-out.mp3',
    keyCode:65
   },
   {
-   soundId:'Acoustic-Guitar',
+   soundId:'Guitar',
    key:'S',
    src:'https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674083/sample-swap/guitar/120_acoustic-guitar-picking1.mp3',
    keyCode:83
@@ -114,8 +114,29 @@ class App extends React.Component {
         </div>
 
         <div className="two-halfs">
-          <p>Powered On</p>
+          <p>Powered <span>On</span></p>
           <p id="display">{this.state.display}</p>
+          <br />
+          <table>
+            <tr>
+              <th colspan="3">Keys Legend</th>
+            </tr>
+            <tr>
+              <td>{sounds[0].key}-{sounds[0].soundId}</td>
+              <td>{sounds[1].key}-{sounds[1].soundId}</td>
+              <td>{sounds[2].key}-{sounds[2].soundId}</td>
+            </tr>
+            <tr>
+              <td>{sounds[3].key}-{sounds[3].soundId}</td>
+              <td>{sounds[4].key}-{sounds[4].soundId}</td>
+              <td>{sounds[5].key}-{sounds[5].soundId}</td>
+            </tr>
+            <tr>
+              <td>{sounds[6].key}-{sounds[6].soundId}</td>
+              <td>{sounds[7].key}-{sounds[7].soundId}</td>
+              <td>{sounds[8].key}-{sounds[8].soundId}</td>
+            </tr>
+          </table>
         </div>
 
       </div>
