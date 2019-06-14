@@ -67,6 +67,21 @@ button:hover {
   border-radius: 5px;
 }
 
+span {
+  color: green;
+}
+
+table, th, td {
+  margin: auto;
+  width: 260px;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
 @media screen and (max-width: 640px) {
   #drum-machine {
     flex-direction: column;
@@ -81,7 +96,7 @@ button:hover {
     margin: auto;
   }
 
-  #container {
+  #container, table {
     margin-left: -54px;
   }
 }
