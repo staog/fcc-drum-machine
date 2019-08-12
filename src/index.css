@@ -28,7 +28,7 @@ body {
   border-radius: 10px;
 }
 
-.two-halfs {
+.half {
   text-align: center;
   width: 50%;
 }
@@ -91,7 +91,7 @@ th, td {
     height: 640px;
   }
 
-  .two-halfs {
+  .half {
     height: 50%;
     margin: auto;
   }
