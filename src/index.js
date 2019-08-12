@@ -104,7 +104,7 @@ class App extends React.Component {
     return (
       <div id="drum-machine">
 
-        <div className="two-halfs">
+        <div className="half">
           <p><strong><em>YAMAHA RY30</em></strong></p>
           <div id="container">
             {sounds.map((d) => {
@@ -113,7 +113,7 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div className="two-halfs">
+        <div className="half">
           <p>Powered <span>On</span></p>
           <p id="display">{this.state.display}</p>
           <br />
